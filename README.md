@@ -11,6 +11,8 @@ Agent installation:
 bash <(curl -s https://raw.githubusercontent.com/kakluo/nezha-serv00/main/install-agent.sh)
 ```
 
-代码来自 [k0baya](https://github.com/k0baya/nezha4serv00)
-
 修改了Agent的版本文件
+
+
+# 感谢 k0baya 提供的Serv00哪吒脚本
+[k0baya](https://github.com/k0baya)
