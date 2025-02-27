@@ -4,12 +4,12 @@ USERNAME=$(whoami) && \
 WORKDIR="/home/${USERNAME}/.nezha-dashboard"
 
 get_current_version() {
-    CURRENT_VERSION=$(cat ${WORKDIR}/VERSION)
+    CURRENT_VERSION="v0.20.13"
 }
 
 get_latest_version() {
     # Get latest release version number
-    RELEASE_LATEST=$(curl -s https://api.github.com/repos/wansyu/nezha-freebsd/releases/latest | jq -r '.tag_name')
+    RELEASE_LATEST="v0.20.13"
     if [[ -z "$RELEASE_LATEST" ]]; then
         echo "error: Failed to get the latest release version, please check your network."
         exit 1
