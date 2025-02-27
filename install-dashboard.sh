@@ -22,7 +22,7 @@ download_nezha() {
         echo 'error: Download failed! Please check your network or try again.'
         return 1
     fi
-    curl -s https://api.github.com/repos/wansyu/nezha-freebsd/releases/latest | jq -r '.tag_name' > ${WORKDIR}/VERSION
+    # curl -s https://api.github.com/repos/wansyu/nezha-freebsd/releases/latest | jq -r '.tag_name' > ${WORKDIR}/VERSION
     return 0
 }
 
